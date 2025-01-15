@@ -11,9 +11,7 @@ class ProductAdmin(admin.ModelAdmin):
     def change_category_to_default(self,request,queryset):
         self.change_category_to_default.short_description = 'Default Category'
     list_display = ('title','price','discount_price','category','description','image')
-    search_fields = ('title',)
-    fields = ('title',)
-    list_editable = ('price','category',)
+
 
 
 
