@@ -5,3 +5,21 @@
 .card-title{
     font-weight: 900;
 }
+/* Custom Card Styling */
+.card {
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.pagination .page-link {
+    border-radius: 20px;
+}

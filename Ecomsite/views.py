@@ -1,10 +1,13 @@
 from django.shortcuts import render
-from Ecomsite.models import Product
+from rest_framework.templatetags.rest_framework import items
+
+from Ecomsite.models import Product, Order
 from django.core.paginator import Paginator
 
 
 def index(request):
     product_object = Product.objects.all()
+
 
     # search code
     item_name = request.GET.get('item_name')
@@ -22,3 +25,23 @@ def index(request):
 def detail(request,id):
     product_object = Product.objects.get(id=id)
     return  render(request,'shop/deatil.html',{'product_object':product_object})
+
+
+def home(request):
+    return render(request,'shop/home.html')
+
+
+def checkout(request):
+
+    if request.method == "POST":
+        items = request.POST.get('items',"")
+        name = request.POST.get('name',"")
+        email = request.POST.get('email',"")
+        address = request.POST.get('address',"")
+        city = request.POST.get('city',"")
+        state = request.POST.get('state',"")
+        zipcode = request.POST.get('zipcode',"")
+        total = request.POST.get('total',"")
+        order  = Order(item=items,name=name,email=email,address=address,city=city,state=state,zipcode=zipcode,total=total)
+        order.save()
+    return render(request,'shop/checkout.html')
