@@ -20,43 +20,6 @@ This is a fully functional e-commerce website built using the Django framework. 
 - **Database:** SQLite (default Django DB)
 - **Version Control:** Git, GitHub
 
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/ecomsite.git
-   cd ecomsite
-
-2.	Create a virtual environment and activate it:
-
-             python -m venv env
-             source env/bin/activate  # For MacOS/Linux
-             .\env\Scripts\activate  # For Windows
-
-
-3.	Install dependencies:
-
-  	     pip install -r requirements.txt
-
-
-5.	Run migrations:
-
-         python manage.py makemigrations
-         python manage.py migrate
-
-
-6.	Create a superuser (for admin access):
-
-python manage.py createsuperuser
-
-
-6.	Run the server:
-
-         python manage.py runserver
-
-7.	Access the site at: http://127.0.0.1:8000/
-
 Project Structure
 
     ecomsite/
