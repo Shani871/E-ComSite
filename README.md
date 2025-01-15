@@ -1,4 +1,4 @@
-Here’s a README.md for your Django e-commerce website project:
+
 
 # Django E-Commerce Website
 
@@ -98,13 +98,10 @@ Contributing
 	4.	Push to the branch: git push origin feature-branch.
 	5.	Create a pull request.
 
-License
 
 This project is licensed under the MIT License.
-
 Contact
-	•	Author: Shani Chauhan
-	•	Email: shanichauhan1542@gmail.com
-	•	LinkedIn: https://www.linkedin.com/in/shani-chauhan-403789323/
+•Author: Shani Chauhan
+•Email: shanichauhan1542@gmail.com
+•LinkedIn: https://www.linkedin.com/in/shani-chauhan-403789323/
 
-Let me know if you need any modifications!
